@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net;
+using Newtonsoft.Json;
 using PersonRepository.Interface;
 
 namespace PersonRepository.Service
@@ -22,7 +23,11 @@ namespace PersonRepository.Service
 
         public IEnumerable<Person> GetPeople()
         {
-            throw new NotImplementedException();
+            var result = client.DownloadString(baseUri);
+
+            IEnumerable<Person> people = JsonConvert.DeserializeObject<IEnumerable<Person>>(result);
+
+            return people;
         }
 
         public Person GetPerson(int id)
