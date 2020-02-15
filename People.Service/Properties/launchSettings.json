@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "PeopleManagement",
+      "launchUrl": "api/people",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,7 +20,7 @@
     "People.Service": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "PeoplemManagement",
+      "launchUrl": "api/people",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
