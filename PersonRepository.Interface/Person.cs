@@ -2,7 +2,7 @@
 
 namespace PersonRepository.Interface
 {
-    public class Class1
+    public class Person
     {
     }
 }
