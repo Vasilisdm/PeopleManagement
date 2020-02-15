@@ -8,7 +8,7 @@ namespace PersonRepository.Service
     public class ServiceRepository : IPersonRepository
     {
         WebClient client = new WebClient();
-        //string baseUri = ""
+        string baseUri = "https://localhost:5003/api/people";
 
         public void AddPerson(Person newPerson)
         {
