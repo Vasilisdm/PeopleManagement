@@ -5,4 +5,12 @@
   </PropertyGroup>
 
 
+  <ItemGroup>
+    <ProjectReference Include="..\PersonRepository.Interface\PersonRepository.Interface.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>
