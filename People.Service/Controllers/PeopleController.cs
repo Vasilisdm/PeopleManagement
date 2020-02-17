@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using People.Service.Models;
 using PersonRepository.Interface;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace People.Service.Controllers
 {

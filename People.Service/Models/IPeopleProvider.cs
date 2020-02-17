@@ -1,6 +1,5 @@
-﻿using System;
+﻿using PersonRepository.Interface;
 using System.Collections.Generic;
-using PersonRepository.Interface;
 
 namespace People.Service.Models
 {

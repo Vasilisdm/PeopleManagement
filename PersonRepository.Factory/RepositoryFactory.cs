@@ -1,30 +1,14 @@
-﻿using System;
-using PersonRepository.CSV;
-using PersonRepository.Interface;
-using PersonRepository.Service;
-using PersonRepository.SQL;
+﻿using PersonRepository.Interface;
+using System;
+using System.Configuration;
 
 namespace PersonRepository.Factory
 {
     public static class RepositoryFactory
     {
-        public static IPersonRepository GetRepository(string repositoryType)
+        public static IPersonRepository GetRepository()
         {
-            IPersonRepository repository = null;
-
-            switch (repositoryType)
-            {
-                case "Service": repository = new ServiceRepository();
-                    break;
-                case "CSV": repository = new CSVRepository();
-                    break;
-                case "SQl": repository = new SQLRepository();
-                    break;
-                default:
-                    throw new ArgumentException("Invalid repository type");
-            }
-
-            return repository;
+            throw new NotImplementedException();
         }
     }
 }
